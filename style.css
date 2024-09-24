@@ -1,0 +1,41 @@
+:root{
+    --color-1: #e6d3c1;
+    --color-2: #548587;
+    --color-3: #ad8b57;
+}
+body{
+    background-color: var(--color-1);
+}
+.nav a, .nav a:focus, .nav a:hover{
+    font-weight: bold;
+    color: var(--color-2);
+}
+header{
+    margin: 0px;
+    background-color: var(--color-2);
+}
+.nav, .myrow{
+    width: 90%;
+    margin: auto;
+    border: 2px solid var(--color-1);
+    background-color: var(--color-1);
+}
+.nav{
+    /* margin-top: 20px; */
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.myrow{
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    /* margin-bottom: 20px; */
+}
+.myhat{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.top{
+    padding: 5%;
+}
