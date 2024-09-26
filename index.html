@@ -3,7 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Подключение Google шрифта -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
         <!-- Подключение стилей -->
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="style.css">
         <title>ПИLЛКА</title>
@@ -12,36 +18,113 @@
         <header>
             <div class="container" id="header">
                 <div class="top">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Навигационная панель -->
-                        <nav class="nav justify-content-flex-start">
-                            <a class="nav-link" href="#header">ПИLКА</a>
-                            <a class="nav-link" href="#">О НАС</a>
-                            <a class="nav-link" href="#">ФОТО</a>
-                            <a class="nav-link" href="#">ПРАЙС-ЛИСТ</a>
-                            <a class="nav-link" href="#">КОНТАКТЫ</a>
-                        </nav>
-                    </div>
-                </div>
-                <div class="row myrow">
-                    <div class="col-xl-4 col-sm-12 myhat">
-                        <div class="rigth-slogan">
-                            <p>
-                                ПИLКА NAIL STUDIO
-                            </p>
-                        </div>
-                        <img src="photo/nails.png" width="50%">
-                        <div class="left-slogan">
-                            <P>
-                                СТУДИЯ КРАСОТЫ
-                            </P>
-                            <button class="btn">ПРАЙС-ЛИСТ</button>
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Навигационная панель -->
+                            <nav class="nav justify-content-flex-start">
+                                <a class="nav-link" href="#header">ПИLКА</a>
+                                <a class="nav-link" href="#about">О НАС</a>
+                                <a class="nav-link" href="#photo">ФОТО</a>
+                                <a class="nav-link" href="#price">ПРАЙС-ЛИСТ</a>
+                                <a class="nav-link" href="#contacts">КОНТАКТЫ</a>
+                            </nav>
                         </div>
                     </div>
+                    <!-- Нижняя часть header -->
+                    <div class="row myrow">
+                        <div class="col-xl-4 col-sm-12 myhat">
+                            <div class="rigth-slogan">
+                                <h1>
+                                    <b>ПИLКА NAIL STUDIO</b>
+                                </h1>
+                            </div>
+                            <img src="photo/nails.png" width="50%">
+                            <div class="left-slogan">
+                                <h2>
+                                    СТУДИЯ КРАСОТЫ
+                                </h2>
+                                <a class="btn" href="#price">ПРАЙС-ЛИСТ</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
         </header>
+        <!-- Баннер -->
+        <img src="photo/banner.jpg" width="100%">
+        <div class="container">
+            <!-- Описание -->
+            <div class="row">
+                <div class="col-12 about" id="about">
+                    <h2><b>ПИLКА</b></h2>
+                    <p>
+                        Позаботьтесь о красоте и здоровье ваших рук, посетив маникюрный салон. Подарите себе моменты релаксации и ухода, которые придадут вам уверенности и хорошего настроения. Ведь красивый маникюр - это не только модный аксессуар, но и забота о своем внешнем виде.
+                    </p>
+                    <hr>
+                    <p>
+                        Take care of the beauty and health of your hands by visiting a nail salon. Give yourself moments of relaxation and care that will give you confidence and good mood. After all, a beautiful manicure is not only a fashion accessory, but also taking care of your appearance.
+                    </p>
+                </div>
+            </div>
+            <!-- Работы мастера -->
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-sm-12 works" id="photo">
+                    <p class="one"><img src="photo/nail-1.jpg"></p>
+                    <p class="two"> Наша команда профессиональных мастеров сделает все возможное, чтобы вы чувствовали себя комфортно и уходили из студии с невероятно красивым и ухоженным маникюром. Мы используем только лучшие косметические средства и инструменты, чтобы гарантировать качество и безопасность процедур.</p>
+                    <p class="three">У нас вы сможете выбрать из огромного разнообразия дизайнов: от классических френчей до современных и стильных узоров. Наши мастера следят за последними тенденциями в мире маникюра и всегда готовы порадовать вас новыми идеями.</p>
+                    <p class="six"><img src="photo/nail-3.jpg"></p>
+                    <p class="nine"><img src="photo/nail-2.jpg"></p>
+                    <p class="four">Помимо ухода за ногтями, у нас вы сможете насладиться уютной атмосферой студии, приятным общением и чашечкой ароматного чая. Мы стремимся к тому, чтобы каждый наш клиент чувствовал себя особенным и уходил от нас с улыбкой на лице.</p>
+                </div>
+            </div>
+            <!-- Карточки -->
+            <div class="row">
+                <div class="cards">
+                    <div class="mycard col-xl-4 col-md-6 col-sm-12">
+                            <i class="fa fa-map-pin" aria-hidden="true"></i>
+                            <p>Удобное место-<br>расположение</p>
+                    </div>
+                    <div class="mycard col-xl-4 col-md-6 col-sm-12">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <p>Подберем удобную для Вас запись</p>
+                    </div>
+                    <div class="mycard col-xl-4 col-md-6 col-sm-12">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>Гарантируем 3-4 недели носки покрытия</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Прайс-лист -->
+            <div class="row list" id="price">
+                <div class="col-12 price">
+                    <h3>Наш прайс-лист</h3>
+                    <button class="btn" id="price">Показать</button>
+                </div>
+            </div>
+            <!-- Контакты и карта -->
+            <div class="row" id="contacts">
+                <div class="col-12 contacts">
+                    <h3>Наша студия</h3>
+                    
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a64132da25b3270730de038ca49162b95bf95e53b3cfa408b45bd0c5e47c3d3&amp;source=constructor" width="428" height="268" frameborder="0"></iframe>
+                </div>
+                <div class="footer">
+                    <div class="left">
+                        <p>
+                            Записаться и узнать подробности:<br>
+                            +7 (920) 800-13-39<br>
+                            PILKA@info.ru<br>
+                        </p>
+                    </div>
+                    <div class="right">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <i class="fa fa-telegram" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
