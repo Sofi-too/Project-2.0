@@ -12,7 +12,11 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="style.css">
+        <!-- Иконка -->
+        <link rel="icon" href="photo/logo.png">
         <title>ПИLЛКА</title>
+        <!-- Подключение скрипта JQuery -->
+        <script src="JQuery.js"></script>
     </head>
     <body>
         <header>
@@ -33,13 +37,13 @@
                     <!-- Нижняя часть header -->
                     <div class="row myrow">
                         <div class="col-xl-4 col-sm-12 myhat">
-                            <div class="rigth-slogan">
+                            <div class="left-slogan">
                                 <h1>
                                     <b>ПИLКА NAIL STUDIO</b>
                                 </h1>
                             </div>
                             <img src="photo/nails.png" width="50%">
-                            <div class="left-slogan">
+                            <div class="right-slogan">
                                 <h2>
                                     СТУДИЯ КРАСОТЫ
                                 </h2>
@@ -70,9 +74,9 @@
             <div class="row">
                 <div class="col-xl-4 col-md-6 col-sm-12 works" id="photo">
                     <p class="one"><img src="photo/nail-1.jpg"></p>
-                    <p class="two"> Наша команда профессиональных мастеров сделает все возможное, чтобы вы чувствовали себя комфортно и уходили из студии с невероятно красивым и ухоженным маникюром. Мы используем только лучшие косметические средства и инструменты, чтобы гарантировать качество и безопасность процедур.</p>
-                    <p class="three">У нас вы сможете выбрать из огромного разнообразия дизайнов: от классических френчей до современных и стильных узоров. Наши мастера следят за последними тенденциями в мире маникюра и всегда готовы порадовать вас новыми идеями.</p>
+                    <p class="two"> Наша команда мастеров сделает все возможное, чтобы вы чувствовали себя комфортно и уходили из студии с невероятно красивым и ухоженным маникюром. Мы используем только лучшие косметические средства и инструменты, чтобы гарантировать качество и безопасность процедур.</p>
                     <p class="six"><img src="photo/nail-3.jpg"></p>
+                    <p class="three">У нас вы сможете выбрать из огромного разнообразия дизайнов: от классических френчей до современных и стильных узоров. Наши мастера следят за последними тенденциями в мире маникюра и всегда готовы порадовать вас новыми идеями.</p>
                     <p class="nine"><img src="photo/nail-2.jpg"></p>
                     <p class="four">Помимо ухода за ногтями, у нас вы сможете насладиться уютной атмосферой студии, приятным общением и чашечкой ароматного чая. Мы стремимся к тому, чтобы каждый наш клиент чувствовал себя особенным и уходил от нас с улыбкой на лице.</p>
                 </div>
@@ -100,6 +104,69 @@
                     <h3>Наш прайс-лист</h3>
                     <button class="btn" id="price">Показать</button>
                 </div>
+                <div class="table" style="display: none;">
+                    <table  width="100%">
+                        <tr>
+                            <td colspan="3"><font color="#548587"><b>Коррекция покрытия</b></font><br><hr></td>
+                        </tr>
+                        <tr>
+                           <td>Коррекция длина 0-2</td>
+                           <td align="center">1200 ₽</td>
+                        </tr>
+                        <tr>
+                           <td>Коррекция длина 2-4</td>
+                           <td align="center">1400 ₽</td>
+                        </tr>
+                        <tr>
+                           <td>Коррекция длина 4-5</td>
+                           <td align="center">1600 ₽</td>
+                        </tr>
+                        <tr>
+                           <td>Коррекция длина 5-7</td>
+                           <td align="center">1800 ₽</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><font color="#548587"><b>Наращивание</b></font><br><hr></td>
+                        </tr>
+                        <tr>
+                           <td>Длина 1</td>
+                           <td align="center">1500 ₽</td>
+                        </tr>
+                        <tr>
+                           <td>Длина 2-3</td>
+                           <td align="center">1700 ₽</td>
+                        </tr>
+                        <tr>
+                           <td>Длина 4-5</td>
+                           <td align="center">1900 ₽</td>
+                        </tr>
+                        <tr>
+                           <td>Длина 6</td>
+                           <td align="center">2100 ₽</td>
+                        </tr>
+                        <tr>
+                           <td>Длина 7-8</td>
+                           <td align="center">2300 ₽</td>
+                        <tr>
+                            <td colspan="2" height="5"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><font color="#548587"><b>Дизайн</b></font><br><hr></td>
+                        </tr>
+                        <tr>
+                           <td>Френч</td>
+                           <td align="center">150 ₽</td>
+                        </tr>
+                        <tr>
+                           <td>Втирка</td>
+                           <td align="center">150 ₽</td>
+                        </tr>
+                        <tr>
+                           <td>Фигурки</td>
+                           <td align="center">1шт/35 ₽</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <!-- Контакты и карта -->
             <div class="row" id="contacts">
@@ -126,5 +193,6 @@
                 </div>
             </div>
         </div>
+        <script src="price-list.js"></script>
     </body>
 </html>
