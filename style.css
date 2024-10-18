@@ -232,7 +232,7 @@
         width: 100%;
         padding: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-end;
         color: var(--color-2);
     }
@@ -242,6 +242,16 @@
     .myhat img{
         position: relative;
         bottom: -30px;
+    }
+    .left-slogan, .right-slogan{
+        width: 25%;
+        position: relative;
+    }
+    .left-slogan{
+        z-index: 1;
+    }
+    .right-slogan{
+        left: -30px;
     }
     .top{
         padding: 5%;

@@ -1,5 +1,10 @@
 $(function(){
     $('#price').click(function(){
-        $('.table').slideToggle()
+        alert('Чтобы увидеть прайс-лист, пожалуйста, авторизуйтесь!') 
+    })
+})
+$(function(){
+    $('#price-auth').click(function(){
+        $('.table').slideToggle() 
     })
 })
